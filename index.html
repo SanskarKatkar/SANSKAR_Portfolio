@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>portfolio</title>
+  <meta name="description" content="Portfolio" />
+  <meta name="author" content="Sanskar Katkar" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E%A%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- anchor for "Back to top" -->
+  <span id="top" class="sr-only">top</span>
+
+  <div class="container" id="page">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AK</div>
+        <div>
+          <div style="font-weight:700">Sanskar Katkar</div>
+          <div class="muted" style="font-size:13px">Computer Science Student</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="cta">
+        <button class="ghost" id="theme-toggle" aria-pressed="false">🌗</button>
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="hero" id="home">
+      <div class="intro">
+        <p class="pill">👋 Hi, I’m <strong>Sanskar</strong></p>
+        <h1>Computer Science Student</h1>
+        <p class="muted">Hi! I’m a CSE student who loves coding, design, and technology. I enjoy working on projects that challenge my creativity and improve my development skills.</p>
+        <div class="controls">
+          <a class="btn" href="#projects">View My Projects</a>
+          <a class="ghost" href="assets/resume.pdf" download="Sanskar_Katkar_Resume.pdf">Download Resume</a>
+        </div>
+
+        <div style="margin-top:18px" class="muted">Location: Telangana, India • Available for internships</div>
+      </div>
+
+      <div class="avatar" aria-hidden="true">
+        <img src="images/photo.jpeg" alt="Sanskar Katkar portrait" style="width:200px; height:200px; border-radius:0; object-fit:cover;">
+
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="card" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <div class="grid" style="grid-template-columns:1fr 260px;align-items:start">
+        <div>
+          <p>Hello — I’m Sanskar, a B.Tech Computer Science student at SR Universityy (2023–2027). I focus on learning new skills and solving problems</p>
+          <ul>
+            <li>Currently learning: Python, Java, SQL</li>
+            <li>Interested in innovation and building creative solutions</li>
+          </ul>
+           <p><a href="./assets/Resume.pdf" class="btn">Download Resume (PDF)</a></p>
+        </div>
+        <aside>
+          <div class="card" style="padding:12px;">
+            <h3 style="margin-top:0">Fast facts</h3>
+            <p class="muted">Year: 3rd • CGPA: 8.1/ 10</p>
+            <p class="muted">Clubs: Gaming Club</p>
+            <p class="muted">Interests:Competitive Programming, Open Source</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills" role="list">
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">HTML &amp; CSS</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Git</span>
+        <span class="skill">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <article class="project card" aria-labelledby="p2">
+          <img src="images/Screenshot 2025-10-27 201720.png" alt="Screenshot of Portfolio Template" />
+          <div class="meta">
+            <h3 id="p2">Portfolio</h3>
+            <p class="muted">This very portfolio design — responsive and accessibility-minded single-page site template.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <a class="ghost" href="#" aria-label="Live demo Portfolio Template">Live Demo</a>
+              <a class="ghost" href="#" aria-label="GitHub repo Portfolio Template">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card" aria-labelledby="p3">
+          <img src="luxe.png" alt="Screenshot of Hackathon Project" />
+          <div class="meta">
+            <h3 id="p3">Luxe -clothing store </h3>
+            <p class="muted">which is done in HCI Course with only html,css,javascript</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <a class="ghost" href="https://luxein.netlify.app/" aria-label="Live demo Smart Scheduler">Live Demo</a>
+              <a class="ghost" href="https://github.com/SanskarKatkar/Luxe_clothing-store" aria-label="GitHub repo Smart Scheduler">GitHub</a>
+            </div>
+          </div>
+        </article>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card" id="education">
+      <h2>Education</h2>
+      <div>
+        <h3>🎓 B.Tech in Computer Science</h3>
+        <p class="muted">SR University, Warangal(2023 — 2027) • CGPA: 8.4 / 10</p>
+        <p class="muted">Relevant courses: Data Structures & Algorithms, Operating Systems, DBMS, Web Technologies</p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES & ACHIEVEMENTS -->
+    <section class="card" id="certificates">
+  <h2>Certificates & Achievements</h2>
+  <ul>
+    <li><strong>Java Programming Fundamentals Specialization</strong> — IBM Skills Network (Oct 2025)
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5BSYITL5GYM0" target="_blank">Verify</a>
+    </li>
+    <li><strong>Microsoft SQL Server Professional Certificate</strong> — Coursera (Oct 2025)
+      <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/P56IXJM4YC2I" target="_blank">Verify</a>
+    </li>
+    <li><strong>Virtual Internship — AI-CTE Program</strong> — EDU SKILLS</li>
+  </ul>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p class="muted">Have a project, internship, or an interesting idea? I’m open to opportunities and collaborations.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true">
+          <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+        </div>
+        <textarea id="message" name="message" rows="5" placeholder="Message" required aria-required="true"></textarea>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn" type="submit">Send Message</button>
+          <div id="formStatus" class="muted" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+
+      <div style="margin-top:16px" class="muted">
+        <strong>Social:</strong>
+        <a class="ghost" href="https://www.linkedin.com/in/katkar-sanskar-2b95b5347" aria-label="LinkedIn">LinkedIn</a>
+        <a class="ghost" href="https://github.com/" aria-label="GitHub">GitHub</a>
+        <a class="ghost" href="https://mail.google.com/mail/?view=cm&fs=1&to=sanskarkatkar720@gmail.com&su=Portfolio Inquiry&body=Hi Sanskar,%0D%0AI saw your portfolio and wanted to connect!" target="_blank">
+  Email
+</a>
+
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2025 Sanskar katkar. All rights reserved.</div>
+      <a href="#top" class="muted">Back to top</a></div>
+    </footer>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
